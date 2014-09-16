@@ -1,0 +1,44 @@
+4.11 Explain what happens when a Java program attempts to divide one integer by another.
+What happens to the fractional part of the calculation? How can you avoid that outcome?
+Dividing two integers results in integer division—any fractional part of the calculation is lost (i.e., truncated). We must temporarily treat these values as floating-point numbers for use in the calculation. Java provides the unary cast operator to accomplish this task. Line 72 uses the ( double ) cast operator—a unary operator—to create a temporary floating-point copy of its operand total (which appears to the right of the operator). The calculation now consists of a floating-point value (the temporary double version of total ) divided by the integer. To ensure that the operands are of the same type, Java performs an operation called promotion (or implicit conversion) on selected operands. For example, in an expression containing values of the types int and double , the int values are promoted to double values for use in the expression. Point division is performed and the result of the calculation is assigned to average .As long as the (double) cast operator is applied to any variable in the calculation, the calculation will yield a double result.
+
+4.12 Describe the two ways in which control statements can be combined.
+The if...else  double-selection statement allows you to specify an action to perform when the condition is true and a different action when the condition is false.
+The do…while statement performs the action (or group of actions) in its body one or more times.
+
+4.13 What type of repetition would be appropriate for calculating the sum of the first 100 positive integers? 
+Counter-controlled repetition like the example of grades used in the book. Fig. 4.6. This is used because you know how many values there are.
+
+What type would be appropriate for calculating the sum of an arbitrary number of positive integers? Briefly describe how each of these tasks could be performed.
+Sentinel-controlled repetition can be used for an arbitrary amount of positive integers with the sentinel value of -1 to quit. Fig. 4.9.
+
+4.14 What is the difference between preincrementing and postincrementing a variable?
+Preincrementing (++c) causes the variable to be incremented by 1; then the new value of the variable is used in the expression in which it appears. Using the postfix increment (or decrement) operator to add 1 to (or subtract 1 from) a variable is known as postincrementing (c++) (or postdecrementing). This causes the current value of the variable to be used in the expression in which it appears; then the variable’s value is incremented (decremented) by 1.
+
+4.15 Identify and correct the errors in each of the following pieces of code. [Note: There may be more than one error in each piece of code.]
+a) if ( age >= 65 ); //does not need this semi-colon//
+System.out.println( "Age is greater than or equal to 65" );
+else
+System.out.println( "Age is less than 65 )";//” should be inside the )
+
+b) int x = 1, total;
+while ( x <= 10 )
+{
+total += x;
+++x;
+}
+
+c) while ( x <= 100 )
+total += x;
+++x;
+
+d) while ( y > 0 )
+{
+System.out.println( y );
+++y;
+//Missing the } and the operator should be changed to – otherwise there is an infinite loop. 
+
+
+
+Link to Calculator App:
+https://github.com/chrisdavid/SAC_CS112_David_Christopher/blob/master/Calc.java

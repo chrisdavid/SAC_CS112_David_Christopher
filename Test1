@@ -1,0 +1,74 @@
+1. Identify the 5 components of a computer.
+CPU, Memory (RAM), Input Devices (Keyboard, Mouse, Etc.), Output Devices (Monitor, Speakers), Storage Devices (Hard Drive, Optical Drives).
+
+2. What is a computer network?
+A computer network or data network is a telecommunications network that allows computers to exchange data. In computer networks, networked computing devices pass data to each other along data connections. Data is transferred in the form of packets.
+
+3. What are some of the functionality of an Operating System?
+An operating system is the environment in which applications run. It manages hardware and software resources and allocates memory to programs. The OS acts as an intermediary between programs and computer hardware. 
+
+4. What is a Virtual Machine?
+ A virtual machine (VM) is a software application that simulates a computer but hides the under-
+lying operating system and hardware from the programs that interact with it. If the same
+VM is implemented on many computer platforms, applications that it executes can be
+used on all those platforms. The JVM is one of the most widely used virtual machines.
+Microsoft’s .NET uses a similar virtual-machine architecture.
+
+5. What is a program?
+A program, is a set of instructions, written to perform a specified task with a computer.
+
+6. What is a variable?
+A variable or scalar is a storage location and an associated symbolic name (an identifier) which contains some known or unknown quantity or information, a value. The variable name is the usual way to reference the stored value; this separation of name and content allows the name to be used independently of the exact information it represents. The identifier in computer source code can be bound to a value during run time, and the value of the variable may thus change during the course of program execution. Variables in programming may not directly correspond to the concept of variables in mathematics. The value of a computing variable is not necessarily part of an equation or formula as in mathematics. In computing, a variable may be employed in a repetitive process — assigned a value in one place, then used elsewhere, then reassigned a new value and used again in the same way. Variables in computer programming are frequently given long names to make them relatively descriptive of their use.
+
+7. What are the steps to run a Java program?
+Java programs normally go through five phases— Creating a Program, Compiling a Java Program into Bytecodes, Loading a Program into Memory, Bytecode Verification and Execution. The command java invokes the Java Virtual Macine (JVM), which executes Java programs.
+
+8. How would you name the Java file that contains the Java program?
+Name it something similar to the function of the program with the file name ending .java.
+
+9. What is a class file?
+It is a program unit used to house the set of methods that perform the class’s tasks. For example,a class that represents a bank account might contain one method to deposit money to an account, another to withdraw money from an account and a third to inquire what the account’s current balance is. A class is similar in concept to a car’s engineering drawings, which house the design of an accelerator pedal, steering
+wheel, and so on.
+
+10.  How is Java VM similar to an Amazon virtual machine?
+Both are popular and  run on multiple devices and operating systems.
+
+
+Bonus, 10 points each
+B1. What is 289 in binary?
+100100001
+
+B2. What's the best way to divide a binary number by 2?
+In binary arithmetic, division by two can be performed by a bit shift operation that shifts the number one place to the right.  This is a form of strength reduction optimization. For example, 1101001 in binary (the decimal number 105), shifted one place to the right, is 110100 (the decimal number 52): the lowest order bit, a 1, is removed. Similarly, division by any power of two 2k may be performed by right-shifting k positions. Because bit shifts are often much faster operations than division, replacing a division by a shift in this way can be a helpful step in program optimization.
+
+
+Bonus, 20 points
+Ask user to enter an integer, and let them know if the number is divisible by 2.
+
+ import java.util.Scanner;
+
+ public class Even
+ {
+
+ public static void main( String[] args )
+ {
+
+Scanner input = new Scanner( System.in );
+
+ int number1; 
+ 
+ int rema;
+ int two = 2;
+
+ System.out.print( "Enter first integer: " ); // prompt
+ number1 = input.nextInt(); // read first number from user
+ 
+
+ rema = number1 % two;
+		 
+ System.out.printf("Remainder is %d\n", rema);
+ System.out.println("\nIf Remainder is '0', Number is divisible by 2, if '1' it is not");
+ 
+ } 
+ } 
+

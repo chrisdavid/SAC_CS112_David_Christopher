@@ -1,0 +1,38 @@
+
+		import java.util.Scanner;
+
+		public class Week5Lab3a {
+
+		 public static void main(String[] args) {
+
+		Scanner inp = new Scanner( System.in );
+
+		int userNum;
+
+		int computerNum;
+
+
+		computerNum = 0 + (int) ( Math.random() * 3 );
+
+		System.out.println ("Enter a number between 0 and 10");
+
+		userNum = inp.nextInt();
+
+		System.out.printf("Random number is %d\n", computerNum );
+
+
+		if((userNum == 1) && (computerNum == 2))
+			System.out.println("Your Number is 1 AND Random Number is 2");
+			
+		if((userNum == 1) || (computerNum == 1))
+			System.out.println("Your Number is 1 OR Random Number is 1");
+
+		}
+
+		
+		}
+
+				
+	
+
+

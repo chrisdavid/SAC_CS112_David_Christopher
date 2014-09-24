@@ -1,38 +1,30 @@
-
-		import java.util.Scanner;
-
-		public class Week5Lab3a {
-
-		 public static void main(String[] args) {
-
-		Scanner inp = new Scanner( System.in );
-
-		int userNum;
-
+import java.util.Scanner;
+public class Lab3a3 {
+	public static void main(String[] args )
+	{
 		int computerNum;
-
-
-		computerNum = 0 + (int) ( Math.random() * 3 );
-
-		System.out.println ("Enter a number between 0 and 3");
-
-		userNum = inp.nextInt();
-
+		computerNum = 0 + (int) ( Math.random() * 10 );
+		Scanner input = new Scanner( System.in );
+	     	int number1;
+		System.out.print( "Enter the integer: " );
+       		number1 = input.nextInt();
+	     
 		System.out.printf("Random number is %d\n", computerNum );
-
-
-		if((userNum == 1) && (computerNum == 2))
-			System.out.println("Your Number is 1 AND Random Number is 2");
-			
-		if((userNum == 1) || (computerNum == 1))
-			System.out.println("Your Number is 1 OR Random Number is 1");
-
-		}
-
 		
-		}
-
+		if (( number1 > computerNum ) && ( number1 < computerNum ))
+		{		
 				
-	
-
-
+		
+            	System.out.println( "Your number is correct"  );
+		}
+		
+		else if (( number1 < computerNum ) && ( number1 != computerNum )) 
+		{
+            	System.out.println( "Your number is too low" );
+		}
+		else
+		{
+			System.out.println( "Your number is too high" );
+		}
+}
+}

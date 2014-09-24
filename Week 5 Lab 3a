@@ -14,7 +14,7 @@
 
 		computerNum = 0 + (int) ( Math.random() * 3 );
 
-		System.out.println ("Enter a number between 0 and 10");
+		System.out.println ("Enter a number between 0 and 3");
 
 		userNum = inp.nextInt();
 

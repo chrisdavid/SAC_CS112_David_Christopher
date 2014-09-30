@@ -72,11 +72,11 @@ public class RPS2
 
             else if( userChoice == 0 && cpuChoice == 0) // Rock v Rock
 
-                System.out.println("You tied! Rock v Rock \nYou are: "+ ++timesWon +":"+ timesLost +":"+ ++timesTied);
+                System.out.println("You tied! Rock v Rock \nYou are: "+ +timesWon +":"+ timesLost +":"+ ++timesTied);
 
             else if( userChoice == 0 && cpuChoice == 1) // Rock v Paper
 
-                System.out.println("You lost! Rock v Paper \nYou are: "+ ++timesWon +":"+ ++timesLost +":"+ timesTied);
+                System.out.println("You lost! Rock v Paper \nYou are: "+ +timesWon +":"+ ++timesLost +":"+ timesTied);
 
             else if( userChoice == 0 && cpuChoice == 2) // Rock v Scissors
 

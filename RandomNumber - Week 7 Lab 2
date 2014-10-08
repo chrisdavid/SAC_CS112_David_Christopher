@@ -1,0 +1,12 @@
+
+public class RandomNumber {
+
+
+	public int random_number_between_one_and_three() 
+	{
+
+		 return  (int)(Math.random() * 3);
+		  
+	}
+}
+

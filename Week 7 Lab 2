@@ -1,0 +1,11 @@
+public class RandomNumber {
+
+
+	public void equals(){
+
+		  int cpuChoice;
+		  
+		  cpuChoice = (int)(Math.random() * 3);
+		  
+	}
+}

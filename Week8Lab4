@@ -1,0 +1,22 @@
+import java.util.Random;
+
+public class RandomNumber 
+{
+	
+	private int lo, hi, x;
+	
+	public RandomNumber(int i, int j)
+	{
+		lo = i;
+		hi=j;
+		Random rando = new Random();
+		x = rando.nextInt(hi - lo) + lo;	
+		
+	}
+	
+	public int getnum()
+	{
+		return x;
+	}
+
+}

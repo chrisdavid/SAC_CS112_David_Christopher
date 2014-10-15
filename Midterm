@@ -1,0 +1,15 @@
+1. What is a class?
+A Class is a program unit used to house the set of methods that perform the class’s tasks. For example,
+a class that represents a bank account might contain one method to deposit money to an account, 
+another to withdraw money from an account and a third to inquire what the account’s current balance is. 
+A class is similar in concept to a car’s engineering drawings, which house the design of an accelerator pedal, 
+steering wheel, and so on.  A class is the blueprint from which individual objects are created.
+
+2. What is the difference between declaring a variable and instantiating a variable (10 points)
+A variable is initialized with a value. An object is instantiated when memory is allocated for it and it's constructor has been run.
+Declaring a variable is the creation of the variable that appear alone, the variable has to come with the type such as float, double, int or boolean. Declarations simply notify the compiler that you will be using name to refer to a variable whose type is type. Declarations do not instantiate objects.
+Instantiating a variable is the new operator which instantiates a new object by allocating memory for it. new requires a single argument: a constructor method for the object to be created. The constructor method is responsible for initializing the new object.  An object is then referred to as an instance of its class.
+
+
+
+

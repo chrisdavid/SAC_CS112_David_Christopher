@@ -1,4 +1,4 @@
-1. What is a class?
+1. What is a Java class? (10 points)
 A Class is a program unit used to house the set of methods that perform the class’s tasks. For example,
 a class that represents a bank account might contain one method to deposit money to an account, 
 another to withdraw money from an account and a third to inquire what the account’s current balance is. 
@@ -11,5 +11,60 @@ Declaring a variable is the creation of the variable that appear alone, the vari
 Instantiating a variable is the new operator which instantiates a new object by allocating memory for it. new requires a single argument: a constructor method for the object to be created. The constructor method is responsible for initializing the new object.  An object is then referred to as an instance of its class.
 
 
+3. Write a Odd/Even game, where the user is asked to guess whether a system generated number is Odd or Even (50 points)
 
 
+import java.util.Scanner;
+public class OddEven 
+{
+	public static void main(String[] args )
+	{
+		int x;
+	     System.out.println("Enter an integer to check if it is odd or even ");
+	     Scanner in = new Scanner(System.in);
+	      x = in.nextInt();
+	 
+	      if ( x % 2 == 0 )
+	         System.out.println("You entered an even number.");
+	      else
+	         System.out.println("You entered an odd number.");
+	  
+	}
+}
+
+
+4. Allow the user to play until the user no longer interested (20 points)
+
+
+public class OddEven 
+{
+	public static void main(String[] args )
+	{
+		int x;
+	    String answer = "";
+	 do
+	 {
+		 System.out.println("Enter an integer for the sytem to guess if it is odd or even ");
+	     Scanner in = new Scanner(System.in);
+	     x = in.nextInt();
+	      if ( x % 2 == 0 )
+	         System.out.println("You entered an even number.");
+	      else
+	         System.out.println("You entered an odd number.");
+	      
+	      System.out.println("Continue(Y/N)");
+
+	      answer = in.next();
+	      
+	 }
+	 
+	  while (answer.equals("y"));
+		  
+	}
+}
+
+
+
+5. Keep track of number of wins and loses and inform user upon game completion (10 points)
+6. Use a class to generate the randome odd/even number (5 points)
+7. Add a method to test whether the number is odd/even, and use it in the game (10 points)
